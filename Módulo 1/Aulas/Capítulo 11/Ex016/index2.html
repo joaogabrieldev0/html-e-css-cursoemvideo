@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com Vários Sources</title>
+</head>
+<body>
+    <h1>Vídeo com Vários Sources</h1>
+    
+    <p>O código fica assim: </p>
+
+    <pre>
+    <Code>
+    &lt;video controls&gt;
+        &lt;source src="midias/meu-video.mp4"&gt;
+
+        &lt;source src="midias/meu-video.m4v"&gt;
+
+        &lt;source src="midias/meu-video.webm" type=""&gt;
+
+        &lt;source src="midias/meu-video.ogv" type=""&gt;
+    &lt;/video&gt;
+
+    </Code>
+    </pre>
+
+    <p>E esse é resultado: </p>
+
+    <video width="500" poster="midias/limoes-capa.png" controls loop>
+        
+        <source src="midias/meu-video.mp4" type="video/mp4">
+
+        <source src="midias/meu-video.m4v" type="video/mp4">
+
+        <source src="midias/meu-video.webm" type="video/webm">
+
+        <source src="midias/meu-video.ogv" type="video/ogg">
+        
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+</body>
+</html>

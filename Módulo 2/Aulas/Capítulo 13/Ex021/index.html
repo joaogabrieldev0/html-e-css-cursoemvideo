@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /*Configuração Global*/ 
+            height: 100%;
+        }
+        
+        body{
+             /* Maneira 1        
+            background-image: linear-gradient(to bottom, rgb(0, 19, 128), blue); */
+
+            /* Maneira 2 */
+            background-image: linear-gradient(80deg, blue 5%, red, yellow, pink);
+            
+            /* Para manter o degradê fixo independente da rolagem */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: wheat;">Testando Gradiente</h1>
+
+    <h2 style="color: white;">O tipo 1 está nesse site, <a href="index2.html">CLIQUE AQUI</a> para acessar o tipo 2</h2>
+</body>
+</html>

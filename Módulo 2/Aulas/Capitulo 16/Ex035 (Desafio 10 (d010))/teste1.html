@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+    span.sublinhado {
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.sublinhado::after{
+    content: ' ';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: rgba(150, 136, 32, 0.753);
+    transition: width 0.2s;
+
+}
+
+.sublinhado:hover:after{
+    width: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+    <h1>Testando efeito de sublinhado</h1>
+
+    <span class="efeito-sublinhado">Passe o mouse em cima para visualizar</span>
+
+
+</body>
+</html>

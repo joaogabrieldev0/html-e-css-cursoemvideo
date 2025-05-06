@@ -1,0 +1,5 @@
+GIT E GITHUB
+
+GIT - Serve para versionamento de projetos na própria maquina (Armazenamento de várias versões) -> Repositório Local
+
+GitHub - Backup de todas essas versões na Maquina -> Repositório Remoto

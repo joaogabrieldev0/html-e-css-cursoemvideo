@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas - pt1</title>
+    <style>
+      #div1 {
+        /* Shorthand: Nessa ordem -> Widht, Style, Color */
+        border: 10px solid black;
+        
+        width: 200px;
+        text-align: center;
+        border-style: dashed;
+        
+        
+       /* Shorthand: Nessa ordem */
+        margin-top: 20px;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
+
+      
+        /* ShortHand: Nessa ordem! */
+        outline-width: 10px;
+        outline-style: dashed;
+        outline-color: rgb(255, 0, 0);
+        
+      }
+
+      #div1:hover {
+        padding: 20px;
+        border-style: solid;
+        color: white;
+        background-color: rgb(117, 117, 117);
+        
+         /* Shorthand: Nessa ordem -> Widht, Style, Color */
+        outline-width: 10px;
+        outline-style: solid;
+        outline-color: rgb(255, 0, 0);
+        
+      }
+
+      #inline {
+        border: 10px solid red;
+        padding: 8px;
+        border-style: groove;
+        margin-top: 30px;
+      }
+
+      /* O shorthand do margin também serve para o padding */
+
+    </style>
+  </head>
+  <body>
+    <h1>Modelo de Caixas</h1>
+    
+    <div id="div1">
+      <h2>Modelo de Caixa</h2>
+    </div>
+
+    <h2>Aqui está um exemplo de caixa <null id="inline">inline-level</null></h2>
+  </body>
+</html>

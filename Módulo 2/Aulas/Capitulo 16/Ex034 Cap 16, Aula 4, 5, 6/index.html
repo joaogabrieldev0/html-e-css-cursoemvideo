@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style> 
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+
+        }
+
+        header{
+            background-color: white;
+            width: 800px;
+            padding: 20px;
+        }
+
+        main{
+            background-color: white;
+           
+        }
+
+        main > h2{
+            text-align: center;
+        }
+
+        article > h2{
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+        footer{
+            background-color: white;
+            
+        }
+
+        footer > h2{
+            background-color: white;
+            text-align: center;
+            
+        }
+
+        main > section{
+            background-color: lightblue;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.356);
+            
+            
+        }
+
+        nav{
+            background-color: lightcoral;
+            padding: 15px;
+            margin: 15px;
+            /* Box Shadow ShortHand:             
+            Box-Shadow: 1º Desloc-Horizontal 2º Desloc-Vertical 3º Blur Radius 4º Espalhamento (Spread) 5º Cor -> Nessa Ordem!!!!          
+            */
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.671);
+            
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: solid;
+            color: blue;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        main > #noticias{
+            margin-bottom: 20px;
+            
+
+        }
+
+        main{
+            /* Border-Radius: ShortHand (Igual ao do Margin e Padding) 
+            
+            1º border-top-left-radius 
+            2º border-top-right-radius 
+            3º border-bottom-right-radius 
+            4º border-bottom-left-radius
+
+            NESSA ORDEM!!!!
+                        
+            */
+
+            border-radius: 0px 30px;
+            /* OBS.: Se tiverem apenas 2 valores: 
+            1º valor: top-left e bottom-right 
+            2º valor: top-right e bottom-left */
+        
+            padding: 10px;
+
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div -> Box Level -->
+    <!-- Span -> Inline Level -->
+
+    <!-- Cabeçalho -->
+    
+    <header>
+        <h1>Meu Site</h1>
+        <h2>Cabeçalho</h2>
+        <nav> <!--Barra de Navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    
+    </header>
+    
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Principal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit minus ducimus veniam, molestiae consequatur aliquam! Tempore nam, placeat at sapiente eveniet natus voluptatum fuga consequatur dolorem eum est nobis! Officiis?</p>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dolore provident quasi est velit labore amet accusamus inventore voluptatibus ipsam facilis maxime dolorem impedit vero nihil! Ea nostrum magni sequi!</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                
+                <h2>Noticias sobre o Brasil</h2>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eius voluptates repellendus aperiam accusamus. Voluptatibus vitae laborum iste magnam, adipisci atque nisi molestiae, delectus consequatur, expedita voluptate dignissimos excepturi reprehenderit!</p>
+            
+            </article>
+                <p>Artigo escrito por José da Silva</p>
+            <article>
+                <aside>Para Curso em Vídeo</aside>
+            </article>
+        </section>
+    </main>
+    <!-- Rodapé -->
+     <footer>
+        <h2>Para Curso em Vídeo</h2>
+    </footer>
+</body>
+</html>

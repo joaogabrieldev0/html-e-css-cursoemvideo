@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes - Fontes Externas Baixadas</title>
+    <style>
+        @font-face {
+            font-family: 'Caliste';
+            src: url(fonts/caliste_2/Caliste.otf)         
+            /* Tipos de Format(): 
+                - OpenType (otf)
+                - TrueType (ttf)
+                - Embedded-OpenType   
+                - Truetype-att (Apple Advanced Typhografy)
+                - Svg                       
+            */
+            format('opentype'), url(fonts/caliste_2/Caliste.ttf) format('truetype');
+        
+        }
+
+        @font-face {
+            font-family: 'Lemon Milk';
+            src: url(fonts/lemon_milk/LEMONMILK-Regular.otf);
+            font-size: 25px;
+        }
+
+        h1{
+            font-family: 'Caliste';
+            
+        }
+
+        p{
+            font-family: 'Lemon Milk';
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam, officiis architecto minima tenetur quasi ut harum, ullam deserunt porro voluptates nihil, unde dolores animi iure repellendus molestias quos totam.</p>
+</body>
+</html>

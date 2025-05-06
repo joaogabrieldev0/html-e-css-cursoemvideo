@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*  Em HTML, é ID = Em CSS, é # -> É usado para         transformar tags em Tags Únicas 
+    Em HTML, É Class = Em CSS, é . -> É usado para dar caracteristicas a grupo de tags. 
+*/
+
+
+body{
+    background-color: #829882;
+    
+}
+
+h1{
+    color: #234323;
+}
+
+h2{
+    color: #90ee90;
+
+}
+
+#principal{
+    text-align: center;
+    color: white;
+    background-color: #234323;
+}
+
+.basico{
+    color: #91CAED;
+}
+
+.intermediario{
+    color: #EFEC64;
+}
+
+.avancado{
+    color:#ED9192;
+
+}
